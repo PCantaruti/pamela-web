@@ -1,6 +1,6 @@
 "use client";
 
-import { AboutIntro } from "@/components/AboutIntro/AboutIntro";
+import { AboutIntro } from "@/components/about-intro/about-intro";
 import styles from "./page.module.css";
 
 export default function Home() {
