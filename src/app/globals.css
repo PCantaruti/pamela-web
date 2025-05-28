@@ -1,0 +1,24 @@
+:root {
+  --color-light-gray: #f2f2f2;
+  --color-medium-gray: #828387;
+  --color-dark-gray: #1f191a;
+  --color-overlay: rgba(67, 62, 63, 0.17);
+  --color-soft-white: #f9f8ff;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--color-light-gray: );
+  font-family: var(--font-saira), sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
