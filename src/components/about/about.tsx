@@ -7,6 +7,23 @@ const AboutText = styled.div`
     font-weight: 400;
     padding: 10px 0;
   }
+
+  h1 {
+    text-transform: uppercase;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      top: 35px;
+      width: 300px;
+      height: 4px;
+      background-color: var(--color-soft-white);
+      border-radius: 2px;
+    }
+  }
 `;
 
 export function About() {
@@ -14,7 +31,7 @@ export function About() {
     <BackgroundWrapper>
       <ContentBox>
         <AboutText>
-          <h1>SOBRE</h1>
+          <h1>Sobre</h1>
           <p>
             Sou desenvolvedora com foco em front-end, apaixonada por criar
             interfaces intuitivas e funcionais. Atualmente, curso Análise e

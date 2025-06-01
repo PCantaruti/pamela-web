@@ -14,11 +14,15 @@ const TagHeader = styled.header`
   background: var(--color-medium-gray);
   text-transform: uppercase;
 `;
+
 const Logo = styled.a`
+  color: var(--color-soft-white);
   font-weight: 600;
   font-size: 24px;
   line-height: 150%;
   cursor: pointer;
+  text-decoration: none;
+
   &:hover {
     color: var(--color-dark-gray);
   }
@@ -29,26 +33,29 @@ const NavContent = styled.ul`
   align-items: center;
   justify-content: center;
   gap: 32px;
+`;
 
-  li {
-    font-weight: 600;
-    line-height: 150%;
-    cursor: pointer;
-    list-style: none;
-    &:hover {
-      color: var(--color-dark-gray);
-    }
+const NavLink = styled.a`
+  font-weight: 600;
+  line-height: 150%;
+  cursor: pointer;
+  color: inherit;
+
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-dark-gray);
   }
 `;
 
 export function Header() {
   return (
     <TagHeader>
-      <Logo>&lt;Pamela Cantaruti/&gt;</Logo>
+      <Logo href="#home"> &lt;Pamela Cantaruti/&gt; </Logo>
       <NavContent>
-        <li>Sobre</li>
-        <li>Habilidades</li>
-        <li>Projetos</li>
+        <NavLink href="#about">Sobre</NavLink>
+        <NavLink href="#skills">Habilidades</NavLink>
+        <NavLink href="#projects">Projetos</NavLink>
       </NavContent>
     </TagHeader>
   );
