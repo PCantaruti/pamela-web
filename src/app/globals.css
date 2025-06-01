@@ -1,9 +1,8 @@
 :root {
-  --color-light-gray: #f2f2f2;
+  --color-soft-white: #f9f8ff;
   --color-medium-gray: #828387;
   --color-dark-gray: #1f191a;
-  --color-overlay: rgba(67, 62, 63, 0.85);
-  --color-soft-white: #f9f8ff;
+  --color-overlay: rgba(31, 25, 26, 0.85);
 }
 
 html,
@@ -15,7 +14,6 @@ body {
 }
 
 body {
-  background: var(--color-light-gray);
   font-family: var(--font-saira), sans-serif;
   font-size: 14px;
   color: var(--color-soft-white);
