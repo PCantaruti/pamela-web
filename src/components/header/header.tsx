@@ -2,19 +2,17 @@
 import styled from "styled-components";
 
 const TagHeader = styled.header`
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 18px 160px;
   background: var(--color-medium-gray);
   text-transform: uppercase;
-
-  > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-  }
 `;
 const Logo = styled.a`
   font-weight: 600;

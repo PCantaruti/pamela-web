@@ -11,11 +11,10 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
-  background: var(--color-light-gray: );
+  background: var(--color-light-gray);
   font-family: var(--font-saira), sans-serif;
   font-size: 14px;
   color: var(--color-soft-white);
@@ -25,4 +24,12 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-transform: uppercase;
+  padding-bottom: 20px;
 }
