@@ -17,7 +17,6 @@ const TagHeader = styled.header`
   }
 `;
 const Logo = styled.a`
-  color: var(--color-soft-white);
   font-weight: 600;
   font-size: 24px;
   line-height: 150%;
@@ -34,9 +33,7 @@ const NavContent = styled.ul`
   gap: 32px;
 
   li {
-    color: var(--color-soft-white);
     font-weight: 600;
-    font-size: 16px;
     line-height: 150%;
     cursor: pointer;
     list-style: none;

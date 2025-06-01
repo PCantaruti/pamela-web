@@ -6,14 +6,9 @@ const ContactContainer = styled.div`
   justify-content: center;
   gap: 24px;
   margin-top: -10px;
-
-  a {
-    text-decoration: none;
-    color: var(--color-soft-white);
-  }
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   width: 80px;
   height: 45px;
   background: transparent;
@@ -21,20 +16,26 @@ const Button = styled.button`
   border: 1px solid var(--color-soft-white);
   cursor: pointer;
 
-  color: var(--color-soft-white);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 150%;
+  text-decoration: none;
+  color: var(--color-soft-white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: var(--color-soft-white);
+    color: var(--color-dark-gray);
+  }
 `;
 export function Contact() {
   return (
     <ContactContainer>
-      <Button>
-        <a href="#">Linkedin</a>
-      </Button>
-      <Button>
-        <a href="#">Github</a>
-      </Button>
+      <Button href="#">Linkedin</Button>
+      <Button href="#">Github</Button>
     </ContactContainer>
   );
 }

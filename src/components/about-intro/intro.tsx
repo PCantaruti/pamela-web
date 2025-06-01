@@ -2,17 +2,15 @@ import styled from "styled-components";
 
 const AboutText = styled.div`
   h1 {
-    color: var(--color-soft-white);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 150%;
     text-transform: uppercase;
+    padding-bottom: 20px;
   }
 
   li {
-    color: var(--color-soft-white);
     font-weight: 400;
-    font-size: 16px;
     line-height: 150%;
     list-style: none;
   }
