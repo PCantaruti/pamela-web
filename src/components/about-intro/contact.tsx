@@ -34,8 +34,20 @@ const Button = styled.a`
 export function Contact() {
   return (
     <ContactContainer>
-      <Button href="#">Linkedin</Button>
-      <Button href="#">Github</Button>
+      <Button
+        href="https://www.linkedin.com/in/pamela-cantaruti-0b902b199/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Linkedin
+      </Button>
+      <Button
+        href="https://github.com/PCantaruti"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Github
+      </Button>
     </ContactContainer>
   );
 }
