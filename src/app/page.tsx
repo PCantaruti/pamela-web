@@ -4,6 +4,7 @@ import { AboutIntro } from "@/components/intro/about-intro";
 import styles from "./page.module.css";
 import { About } from "@/components/about/about";
 import { Skills } from "@/components/skills/skills";
+import { Projects } from "@/components/projects/projects";
 
 export default function Home() {
   return (
@@ -17,7 +18,9 @@ export default function Home() {
       <section id="skills">
         <Skills />
       </section>
-      <section id="projects"></section>
+      <section id="projects">
+        <Projects />
+      </section>
     </main>
   );
 }

@@ -20,7 +20,6 @@ const ContentBoxSection = styled.div`
   @media (max-width: 375px) {
     background: transparent;
     padding: 0px 20px;
-    justify-content: center;
   }
 `;
 
