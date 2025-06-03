@@ -11,7 +11,7 @@ const AboutText = styled.div`
 export function Intro() {
   return (
     <AboutText>
-      <h1>OLÁ, EU SOU A PAMELA</h1>
+      <h2>OLÁ, EU SOU A PAMELA</h2>
       <li>Desenvolvedora Web |</li>
       <li>QA Analyst |</li>
       <li>Apaixonada por tecnologia</li>

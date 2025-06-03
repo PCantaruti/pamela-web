@@ -10,7 +10,7 @@ const ContentBoxSection = styled.div`
 
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 `;
 
 interface ContentBoxProps {

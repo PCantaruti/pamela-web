@@ -48,30 +48,6 @@ const skills = [
   },
 ];
 
-const SkillsText = styled.div`
-  p {
-    font-weight: 400;
-    padding: 10px 0;
-  }
-
-  h1 {
-    text-transform: uppercase;
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -8px;
-      top: 35px;
-      width: 300px;
-      height: 4px;
-      background-color: var(--color-soft-white);
-      border-radius: 2px;
-    }
-  }
-`;
-
 const Image = styled.img`
   width: 60px;
   height: 60px;
@@ -91,7 +67,6 @@ const ImagesContainer = styled.div`
 const DescriptionBox = styled.div`
   max-width: 600px;
   margin: 0 auto;
-  padding-top: 20px;
   font-size: 16px;
   color: var(--color-soft-white);
   text-align: center;
@@ -108,31 +83,29 @@ export function Skills() {
   return (
     <BackgroundWrapper>
       <ContentBox>
-        <SkillsText>
-          <h1>Habilidades</h1>
-          <ImagesContainer>
-            {skills.map((skill) => (
-              <Image
-                key={skill.name}
-                src={skill.icon}
-                alt={skill.name}
-                onClick={() => handleImageClick(skill.name)}
-              />
-            ))}
-          </ImagesContainer>
-          <DescriptionBox>
-            {currentSkill ? (
-              <>
-                <strong>{currentSkill.name}:</strong> {currentSkill.description}
-              </>
-            ) : (
-              <>
-                Clique em uma das tecnologias para saber mais sobre minha
-                experiência.
-              </>
-            )}
-          </DescriptionBox>
-        </SkillsText>
+        <h1>Habilidades</h1>
+        <ImagesContainer>
+          {skills.map((skill) => (
+            <Image
+              key={skill.name}
+              src={skill.icon}
+              alt={skill.name}
+              onClick={() => handleImageClick(skill.name)}
+            />
+          ))}
+        </ImagesContainer>
+        <DescriptionBox>
+          {currentSkill ? (
+            <>
+              <strong>{currentSkill.name}:</strong> {currentSkill.description}
+            </>
+          ) : (
+            <>
+              Clique em uma das tecnologias para saber mais sobre minha
+              experiência.
+            </>
+          )}
+        </DescriptionBox>
       </ContentBox>
     </BackgroundWrapper>
   );
