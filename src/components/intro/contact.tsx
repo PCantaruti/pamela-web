@@ -7,7 +7,7 @@ const ContactContainer = styled.div`
   gap: 24px;
   margin-top: -10px;
 
-  @media (max-width: 375px) {
+  @media (max-width: 400px) {
     margin-top: 10px;
   }
 `;

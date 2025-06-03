@@ -31,7 +31,7 @@ const RowContainer = styled.div`
   justify-content: center;
   gap: 24px;
 
-  @media (max-width: 375px) {
+  @media (max-width: 400px) {
     flex-direction: column;
     gap: 0px;
   }

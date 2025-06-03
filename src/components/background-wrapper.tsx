@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  @media (max-width: 375px) {
+  @media (max-width: 400px) {
     background-image: url("/bg-mobile.png");
   }
 `;
