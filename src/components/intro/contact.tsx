@@ -6,6 +6,10 @@ const ContactContainer = styled.div`
   justify-content: center;
   gap: 24px;
   margin-top: -10px;
+
+  @media (max-width: 375px) {
+    margin-top: 10px;
+  }
 `;
 
 const Button = styled.a`

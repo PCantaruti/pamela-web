@@ -16,6 +16,10 @@ const Wrapper = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  @media (max-width: 375px) {
+    background-image: url("/bg-mobile.png");
+  }
 `;
 
 interface BackgroundWrapperProps {

@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { BackgroundWrapper } from "../background-wrapper";
 import { ContentBox } from "../content-box";
 
-const AboutText = styled.div``;
-
 export function About() {
   return (
     <BackgroundWrapper>

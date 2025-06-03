@@ -19,7 +19,7 @@ const TagHeader = styled.header`
     padding: 18px 40px;
   }
 
-  @media (max-width: 365px) {
+  @media (max-width: 375px) {
     width: 100%;
     justify-content: center;
     padding: 18px 20px;
@@ -53,7 +53,7 @@ const NavContent = styled.ul`
     transform: scale(0.8);
   }
 
-  @media (max-width: 365px) {
+  @media (max-width: 375px) {
     display: none;
   }
 `;

@@ -11,6 +11,17 @@ const ContentBoxSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    transform: scale(0.9);
+    width: 100%;
+  }
+
+  @media (max-width: 375px) {
+    background: transparent;
+    padding: 0px 20px;
+    justify-content: center;
+  }
 `;
 
 interface ContentBoxProps {

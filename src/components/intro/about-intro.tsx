@@ -30,6 +30,11 @@ const RowContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 24px;
+
+  @media (max-width: 375px) {
+    flex-direction: column;
+    gap: 0px;
+  }
 `;
 
 export function AboutIntro() {
