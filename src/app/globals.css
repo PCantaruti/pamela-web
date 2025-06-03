@@ -25,10 +25,38 @@ body {
   margin: 0;
 }
 
-h1 {
+h2 {
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
   text-transform: uppercase;
   padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -px;
+    top: 35px;
+    width: 300px;
+    height: 4px;
+    background-color: var(--color-soft-white);
+    border-radius: 2px;
+  }
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
 }

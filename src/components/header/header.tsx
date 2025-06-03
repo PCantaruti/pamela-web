@@ -13,6 +13,17 @@ const TagHeader = styled.header`
   padding: 18px 160px;
   background: var(--color-medium-gray);
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 18px 40px;
+  }
+
+  @media (max-width: 365px) {
+    width: 100%;
+    justify-content: center;
+    padding: 18px 20px;
+  }
 `;
 
 const Logo = styled.a`
@@ -26,6 +37,10 @@ const Logo = styled.a`
   &:hover {
     color: var(--color-dark-gray);
   }
+
+  @media (max-width: 768px) {
+    transform: scale(0.8);
+  }
 `;
 
 const NavContent = styled.ul`
@@ -33,6 +48,14 @@ const NavContent = styled.ul`
   align-items: center;
   justify-content: center;
   gap: 32px;
+
+  @media (max-width: 768px) {
+    transform: scale(0.8);
+  }
+
+  @media (max-width: 365px) {
+    display: none;
+  }
 `;
 
 const NavLink = styled.a`
