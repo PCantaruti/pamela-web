@@ -4,7 +4,6 @@ import { ReactNode } from "react";
 const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
-
   padding-top: 72px;
 
   display: flex;
@@ -15,10 +14,14 @@ const Wrapper = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+
+  @media (min-width: 401px) {
+    background-attachment: fixed;
+  }
 
   @media (max-width: 400px) {
-    background-image: url("/bg-mobile.png");
+    background-image: none;
+    background-color: var(--color-overlay);
   }
 `;
 
