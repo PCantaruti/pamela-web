@@ -17,7 +17,7 @@ const ContentBoxSection = styled.div`
     width: 100%;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 480px) {
     background: transparent;
     padding: 0px 20px;
   }

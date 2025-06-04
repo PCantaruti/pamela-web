@@ -19,7 +19,7 @@ const Wrapper = styled.div`
     background-attachment: fixed;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 480px) {
     background-image: none;
     background-color: var(--color-overlay);
   }
