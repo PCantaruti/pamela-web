@@ -2,11 +2,11 @@
 import styled, { keyframes } from "styled-components";
 
 const images = [
-  "./icons/next-icon.png",
-  "./icons/git-icon.png",
-  "./icons/js-icon.png",
-  "./icons/react-icon.png",
-  "./icons/ts-icon.png",
+  "/icons/next-icon.png",
+  "/icons/git-icon.png",
+  "/icons/js-icon.png",
+  "/icons/react-icon.png",
+  "/icons/ts-icon.png",
 ];
 
 const rotate = keyframes`

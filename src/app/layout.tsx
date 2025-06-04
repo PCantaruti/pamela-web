@@ -13,7 +13,6 @@ export const metadata = {
   title: "Pamela Cantaruti",
   description:
     "Portfólio de Pamela Cantaruti — Desenvolvedora Front-End com foco em React, TypeScript e interfaces responsivas. Projetos pessoais e acadêmicos voltados à criação de soluções web modernas e funcionais.",
-  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({
