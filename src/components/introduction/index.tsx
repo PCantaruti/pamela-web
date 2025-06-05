@@ -2,7 +2,6 @@ import { Contact } from "./contact";
 import { CircularIcons } from "./circular-icons";
 import styled from "styled-components";
 import { IntroductionText } from "./intro-text";
-import { ContentBox } from "../content-box";
 import { BackgroundWrapper } from "../background-wrapper";
 
 const IntroContainer = styled.div`
