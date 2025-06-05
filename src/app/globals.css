@@ -5,6 +5,7 @@
   --color-overlay: rgba(31, 25, 26, 0.85);
   --color-medium-orange: #eb5244;
   --color-soft-orange: #e3a19b;
+  --color-soft-green: #97aaad;
 }
 
 html,
@@ -13,7 +14,7 @@ body {
   padding: 0;
   height: 100%;
   scroll-behavior: smooth;
-  background-color: #97aaad;
+  background-color: var(--color-soft-green);
 }
 
 body {
@@ -36,14 +37,6 @@ h1 {
   line-height: 150%;
   color: var(--color-soft-white);
   text-transform: uppercase;
-}
-
-h2 {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 150%;
-  text-transform: uppercase;
-  padding-bottom: 20px;
 }
 
 p {

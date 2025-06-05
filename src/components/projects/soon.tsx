@@ -1,6 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import { BackgroundWrapper } from "../background-wrapper";
-import { ContentBox } from "../content-box";
 
 const typewriter = keyframes`
   from {
@@ -32,23 +30,6 @@ const TypewriterText = styled.p`
     transform: scale(0.8);
   }
 `;
-
-const ProjectsContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-`;
-
-export function Projects() {
-  return (
-    <BackgroundWrapper>
-      <ContentBox>
-        <h1>Projetos</h1>
-        <ProjectsContainer>
-          <TypewriterText>Em breve ...</TypewriterText>
-        </ProjectsContainer>
-      </ContentBox>
-    </BackgroundWrapper>
-  );
+export function Soon() {
+  return <TypewriterText>Em breve ...</TypewriterText>;
 }
