@@ -25,6 +25,7 @@ export const TagHeader = styled.header`
 
   @media (max-width: 480px) {
     padding: 18px 20px;
+    position: relative;
   }
 `;
 

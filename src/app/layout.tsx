@@ -1,6 +1,5 @@
 import { Saira } from "next/font/google";
-import { Header } from "@/components/header/header";
-import { useEffect } from "react";
+import { Header } from "@/components/header";
 import "./globals.css";
 
 const saira = Saira({

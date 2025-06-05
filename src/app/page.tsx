@@ -1,10 +1,8 @@
 "use client";
-
-import { Introduction } from "@/components/introduction/introduction";
+import { Introduction } from "@/components/introduction";
 import styles from "./page.module.css";
-import { About } from "@/components/about/about";
-import { Skills } from "@/components/skills/skills";
-import { Projects } from "@/components/projects/projects";
+import { About } from "@/components/about";
+import { Projects } from "@/components/projects";
 
 export default function Home() {
   return (
@@ -12,15 +10,12 @@ export default function Home() {
       <section id="home">
         <Introduction />
       </section>
-      {/* <section id="about">
+      <section id="about">
         <About />
-      </section>
-      <section id="skills">
-        <Skills />
       </section>
       <section id="projects">
         <Projects />
-      </section> */}
+      </section>
     </main>
   );
 }
