@@ -18,8 +18,9 @@ export const TagHeader = styled.header`
   background: transparent;
   text-transform: uppercase;
 
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     padding: 18px 40px;
+    scale: 0.9;
   }
 
   @media (max-width: 480px) {
