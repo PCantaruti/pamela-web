@@ -2,18 +2,19 @@ import { navLinks } from "@/data/nav-links";
 import styled from "styled-components";
 
 interface MobileMenuProps {
-  isOpen: boolean;
+  isopen: boolean;
   setMenuOpen: (state: boolean) => void;
 }
 
-export const MobileContainer = styled.div<{ isOpen: boolean }>`
+export const MobileContainer = styled.div<{ $isOpen: boolean }>`
   position: fixed;
   width: 100%;
   background-color: var(--color-soft-orange);
-  display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+  display: ${({ $isOpen }) => ($isOpen ? "block" : "none")};
   flex-direction: column;
   margin-top: 75px;
   border-top: 1px solid var(--color-soft-white);
+  z-index: 1000;
 `;
 
 export const MobileItensMenu = styled.div`
@@ -53,9 +54,9 @@ export const NavLink = styled.a`
     color: var(--color-medium-orange);
   }
 `;
-export function MobileMenu({ isOpen, setMenuOpen }: MobileMenuProps) {
+export function MobileMenu({ isopen, setMenuOpen }: MobileMenuProps) {
   return (
-    <MobileContainer isOpen={isOpen}>
+    <MobileContainer $isOpen={isopen}>
       {Object.entries(navLinks).map(([key, link]) => (
         <MobileItensMenu key={key}>
           <li>

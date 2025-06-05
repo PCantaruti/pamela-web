@@ -29,7 +29,9 @@ export function NavLinks() {
   return (
     <NavContent>
       {Object.entries(navLinks).map(([key, link]) => (
-        <NavLink href={link}>{key}</NavLink>
+        <NavLink key={key} href={link}>
+          {key}
+        </NavLink>
       ))}
     </NavContent>
   );

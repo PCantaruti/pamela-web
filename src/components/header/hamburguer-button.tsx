@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 interface HamburgerProps {
-  isOpen: boolean;
+  isopen: boolean;
   onClick: () => void;
 }
 
-export const HamburgerButtonStyled = styled.button<{ isOpen?: boolean }>`
+export const HamburgerButtonStyled = styled.button<{ $isOpen?: boolean }>`
   display: none;
   background: none;
   border: none;
@@ -25,8 +25,8 @@ export const HamburgerButtonStyled = styled.button<{ isOpen?: boolean }>`
     border-radius: 2px;
   }
 
-  ${({ isOpen }) =>
-    isOpen &&
+  ${({ $isOpen }) =>
+    $isOpen &&
     `
     span:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px);
@@ -40,9 +40,9 @@ export const HamburgerButtonStyled = styled.button<{ isOpen?: boolean }>`
   `}
 `;
 
-export function HamburgerButton({ isOpen, onClick }: HamburgerProps) {
+export function HamburgerButton({ isopen, onClick }: HamburgerProps) {
   return (
-    <HamburgerButtonStyled onClick={onClick} isOpen={isOpen}>
+    <HamburgerButtonStyled onClick={onClick} $isOpen={isopen}>
       <span />
       <span />
       <span />

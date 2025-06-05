@@ -17,7 +17,7 @@ const AboutText = styled.div`
   }
 `;
 
-export function Intro() {
+export function IntroductionText() {
   return (
     <AboutText>
       <h1>Olá, eu sou a Pamela</h1>

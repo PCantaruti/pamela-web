@@ -1,6 +1,6 @@
 "use client";
 
-import { AboutIntro } from "@/components/intro/about-intro";
+import { Introduction } from "@/components/introduction/introduction";
 import styles from "./page.module.css";
 import { About } from "@/components/about/about";
 import { Skills } from "@/components/skills/skills";
@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <section id="home">
-        <AboutIntro />
+        <Introduction />
       </section>
-      <section id="about">
+      {/* <section id="about">
         <About />
       </section>
       <section id="skills">
@@ -20,7 +20,7 @@ export default function Home() {
       </section>
       <section id="projects">
         <Projects />
-      </section>
+      </section> */}
     </main>
   );
 }

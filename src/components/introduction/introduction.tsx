@@ -1,7 +1,7 @@
 import { Contact } from "./contact";
 import { CircularIcons } from "./circular-icons";
 import styled from "styled-components";
-import { Intro } from "./intro";
+import { IntroductionText } from "./intro-text";
 import { ContentBox } from "../content-box";
 import { BackgroundWrapper } from "../background-wrapper";
 
@@ -10,6 +10,10 @@ const IntroContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 850px) {
+    scale: 0.8;
+  }
 `;
 
 const RowContainer = styled.div`
@@ -25,12 +29,12 @@ const RowContainer = styled.div`
   }
 `;
 
-export function AboutIntro() {
+export function Introduction() {
   return (
     <BackgroundWrapper image='url("/background.webp")'>
       <IntroContainer>
         <RowContainer>
-          <Intro />
+          <IntroductionText />
           <CircularIcons />
         </RowContainer>
         <Contact />

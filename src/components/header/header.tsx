@@ -37,12 +37,12 @@ export function Header() {
         <Logo />
         <NavLinks />
         <HamburgerButton
-          isOpen={menuOpen}
+          isopen={menuOpen}
           onClick={() => setMenuOpen(!menuOpen)}
         />
       </TagHeader>
 
-      <MobileMenu isOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <MobileMenu isopen={menuOpen} setMenuOpen={setMenuOpen} />
     </>
   );
 }
