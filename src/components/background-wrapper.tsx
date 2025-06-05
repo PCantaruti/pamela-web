@@ -22,6 +22,7 @@ const Wrapper = styled.div<WrapperProps>`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   font-size: 16px;
 `;
 

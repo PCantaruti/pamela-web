@@ -9,10 +9,10 @@ interface MobileMenuProps {
 export const MobileContainer = styled.div<{ $isOpen: boolean }>`
   position: fixed;
   width: 100%;
-  background-color: var(--color-soft-orange);
+  background-color: var(--color-soft-green);
   display: ${({ $isOpen }) => ($isOpen ? "block" : "none")};
   flex-direction: column;
-  margin-top: 75px;
+  margin-top: 0px;
   border-top: 1px solid var(--color-soft-white);
   z-index: 1000;
 `;
