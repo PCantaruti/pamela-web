@@ -17,10 +17,10 @@ const Button = styled.a`
   height: 45px;
   background: transparent;
   border-radius: 10px;
-  border: 1px solid var(--color-soft-white);
+  border: 2px solid var(--color-soft-white);
   cursor: pointer;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 150%;
   text-decoration: none;
