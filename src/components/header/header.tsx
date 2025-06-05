@@ -11,7 +11,7 @@ const TagHeader = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 18px 160px;
-  background: var(--color-medium-gray);
+  background: transparent;
   text-transform: uppercase;
 
   @media (max-width: 768px) {
@@ -28,6 +28,7 @@ const TagHeader = styled.header`
 
 const Logo = styled.a`
   color: var(--color-soft-white);
+
   font-weight: 600;
   font-size: 24px;
   line-height: 150%;
@@ -35,7 +36,7 @@ const Logo = styled.a`
   text-decoration: none;
 
   &:hover {
-    color: var(--color-dark-gray);
+    color: var(--color-medium-orange);
   }
 
   @media (max-width: 768px) {
@@ -60,6 +61,7 @@ const NavContent = styled.ul`
 
 const NavLink = styled.a`
   font-weight: 600;
+  font-size: 16px;
   line-height: 150%;
   cursor: pointer;
   color: inherit;
@@ -67,7 +69,7 @@ const NavLink = styled.a`
   text-decoration: none;
 
   &:hover {
-    color: var(--color-dark-gray);
+    color: var(--color-medium-orange);
   }
 `;
 

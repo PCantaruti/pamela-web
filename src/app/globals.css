@@ -1,8 +1,9 @@
 :root {
-  --color-soft-white: #f9f8ff;
+  --color-soft-white: #f3f4f3;
   --color-medium-gray: #828387;
   --color-dark-gray: #1f191a;
   --color-overlay: rgba(31, 25, 26, 0.85);
+  --color-medium-orange: #eb5244;
 }
 
 html,
@@ -11,6 +12,7 @@ body {
   padding: 0;
   height: 100%;
   scroll-behavior: smooth;
+  background-color: #97aaad;
 }
 
 body {
@@ -27,6 +29,14 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  color: var(--color-soft-white);
+  text-transform: uppercase;
+}
+
 h2 {
   font-weight: 400;
   font-size: 20px;
@@ -35,31 +45,9 @@ h2 {
   padding-bottom: 20px;
 }
 
-h1 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 150%;
-  text-transform: uppercase;
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 20px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -px;
-    top: 35px;
-    width: 300px;
-    height: 4px;
-    background-color: var(--color-soft-white);
-    border-radius: 2px;
-  }
-}
-
 p {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
   text-align: justify;
 }
