@@ -1,33 +1,25 @@
 import styled from "styled-components";
 import { ReactNode } from "react";
 
+interface BackgroundWrapperProps {
+  children: ReactNode;
+}
+
 const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
-  padding-top: 72px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background-image: url("/bg-intro.png");
+  background-image: url("/background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  @media (min-width: 401px) {
-    background-attachment: fixed;
-  }
-
-  @media (max-width: 480px) {
-    background-image: none;
-    background-color: var(--color-overlay);
-  }
+  font-size: 16px;
 `;
-
-interface BackgroundWrapperProps {
-  children: ReactNode;
-}
 
 export function BackgroundWrapper({ children }: BackgroundWrapperProps) {
   return <Wrapper>{children}</Wrapper>;

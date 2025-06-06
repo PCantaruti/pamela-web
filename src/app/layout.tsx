@@ -1,7 +1,7 @@
 import { Saira } from "next/font/google";
-import { Header } from "@/components/header/header";
-import { useEffect } from "react";
+import { Header } from "@/components/header";
 import "./globals.css";
+import { Footer } from "@/components/footer";
 
 const saira = Saira({
   weight: ["300", "400", "500", "600"],
@@ -25,6 +25,7 @@ export default function RootLayout({
       <body className={`${saira.variable}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
