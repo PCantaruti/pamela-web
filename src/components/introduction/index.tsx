@@ -2,7 +2,7 @@ import { Contact } from "./contact";
 import { CircularIcons } from "./circular-icons";
 import styled from "styled-components";
 import { IntroductionText } from "./intro-text";
-import { BackgroundWrapper } from "../background-wrapper";
+import { BackgroundWrapper } from "./background-wrapper";
 
 const IntroContainer = styled.div`
   display: flex;
@@ -30,7 +30,7 @@ const RowContainer = styled.div`
 
 export function Introduction() {
   return (
-    <BackgroundWrapper image='url("/background.webp")'>
+    <BackgroundWrapper>
       <IntroContainer>
         <RowContainer>
           <IntroductionText />

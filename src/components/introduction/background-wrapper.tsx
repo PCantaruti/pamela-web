@@ -1,16 +1,11 @@
 import styled from "styled-components";
 import { ReactNode } from "react";
 
-interface WrapperProps {
-  image?: string;
-}
-
 interface BackgroundWrapperProps {
   children: ReactNode;
-  image?: string;
 }
 
-const Wrapper = styled.div<WrapperProps>`
+const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
 
@@ -18,7 +13,7 @@ const Wrapper = styled.div<WrapperProps>`
   align-items: center;
   justify-content: center;
 
-  background-image: ${(props) => props.image || "none"};
+  background-image: url("/background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,6 +21,6 @@ const Wrapper = styled.div<WrapperProps>`
   font-size: 16px;
 `;
 
-export function BackgroundWrapper({ children, image }: BackgroundWrapperProps) {
-  return <Wrapper image={image}>{children}</Wrapper>;
+export function BackgroundWrapper({ children }: BackgroundWrapperProps) {
+  return <Wrapper>{children}</Wrapper>;
 }
