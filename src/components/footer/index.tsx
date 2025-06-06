@@ -12,6 +12,10 @@ const FooterStyled = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (max-width: 480px) {
+    height: auto;
+  }
 `;
 
 const Title = styled.div`
@@ -36,11 +40,32 @@ const MainFooter_Upper = styled.div`
     font-size: 18px;
     margin: 4px 0;
   }
+
+  @media (max-width: 850px) {
+    scale: 0.8;
+  }
+
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    height: auto;
+  }
 `;
 
 const MainFooter_Lower = styled.div`
   padding: 30px 0;
   color: var(--color-soft-white);
+
+  @media (max-width: 850px) {
+    scale: 0.8;
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px 0;
+    height: 100px;
+  }
 `;
 
 const MainFooter_Contend_Left = styled.div``;
