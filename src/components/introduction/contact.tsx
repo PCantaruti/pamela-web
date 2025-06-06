@@ -13,15 +13,14 @@ const ContactContainer = styled.div`
 `;
 
 const Button = styled.a`
-  width: 80px;
+  width: 100px;
   height: 45px;
-  background: transparent;
   border-radius: 10px;
-  border: 1px solid var(--color-soft-white);
+  border: 2px solid var(--color-soft-white);
   cursor: pointer;
 
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 150%;
   text-decoration: none;
   color: var(--color-soft-white);
@@ -32,7 +31,7 @@ const Button = styled.a`
 
   &:hover {
     background: var(--color-soft-white);
-    color: var(--color-dark-gray);
+    color: var(--color-medium-orange);
   }
 `;
 export function Contact() {

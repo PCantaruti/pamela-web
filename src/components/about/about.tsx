@@ -1,12 +1,33 @@
 import styled from "styled-components";
-import { BackgroundWrapper } from "../background-wrapper";
-import { ContentBox } from "../content-box";
+import { Title } from "../title";
 
-export function About() {
+const AboutContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 70px;
+  flex: 1;
+
+  @media (max-width: 480px) {
+    padding: 0px 10px;
+  }
+`;
+
+const Text = styled.div`
+  text-align: justify;
+  line-height: 150%;
+  padding: 20px 0;
+
+  p + p {
+    padding-top: 20px;
+  }
+`;
+
+export function AboutText() {
   return (
-    <BackgroundWrapper>
-      <ContentBox>
-        <h1>Sobre</h1>
+    <AboutContainer>
+      <Title title="Sobre mim" />
+      <Text>
         <p>
           Sou desenvolvedora com foco em front-end, apaixonada por criar
           interfaces intuitivas e funcionais. Atualmente, curso Análise e
@@ -27,7 +48,7 @@ export function About() {
           desenvolvedora e criar experiências digitais que realmente façam a
           diferença.
         </p>
-      </ContentBox>
-    </BackgroundWrapper>
+      </Text>
+    </AboutContainer>
   );
 }
